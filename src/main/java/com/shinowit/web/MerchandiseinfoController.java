@@ -20,7 +20,6 @@ public class MerchandiseinfoController {
     private MerchandiseinfoDAO merchandiseinfoDAO;
 
 
-
     @RequestMapping("/dispalymerchandiseinfo")
     @ResponseBody
     public List<Map<String,Object>> merchandinfo(@RequestParam("merchandisecid") String merchandisecid){
