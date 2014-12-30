@@ -63,6 +63,7 @@
     <mvc:resources mapping="/html/**" location="/html/"/>
     <mvc:resources mapping="/images/**" location="/images/"/>
     <mvc:resources mapping="/common/**" location="/common/"/>
+    <mvc:resources mapping="/page/**" location="/page/"/>
 
 
     <!--

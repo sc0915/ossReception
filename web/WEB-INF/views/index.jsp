@@ -45,6 +45,7 @@
                 });
             });
         });
+
     </script>
 
     <script type="text/javascript">
@@ -239,7 +240,7 @@ ssssssssss<br/>
                         <dd>${merchand.merchandisename}</dd>
                         <dd><span class="viv1">￥:${merchand.price}</span><span class="viv2"><a href="<%=request.getContextPath()%>/inner/dispalyinner/${merchand.merchandiseid}"
                                                                                                target="_new"><img
-                                src="<%=request.getContextPath()%>/images/vivioow_b2.jpg" width="80" height="24"
+      2                          src="<%=request.getContextPath()%>/images/vivioow_b2.jpg" width="80" height="24"
                                 border="0"/></a></span></dd>
                     </dl>
                 </c:forEach>

@@ -21,7 +21,7 @@ public class ShopInter implements HandlerInterceptor {
         if((uri.endsWith("/login/userlog"))||(uri.endsWith("/reg/regover"))||(uri.endsWith("/reg/updateemail")||
                 (uri.endsWith("/merchand/dispalymerchand")||(uri.endsWith("/index/userreg"))||(uri.endsWith("/index/log"))
                 ||(uri.endsWith("/inner/dispalyinner"))||(uri.endsWith("/merchandiseinfo/dispalymerchandiseinfo"))||
-                        (uri.endsWith("/merchandiseinfo/prostauts"))))){
+                        (uri.endsWith("/merchandiseinfo/prostauts"))||(uri.startsWith("/css"))||(uri.startsWith("/js"))||(uri.startsWith("/page"))||(uri.startsWith("/common"))||(uri.startsWith("/images"))))){
                 return true;
         }
 
