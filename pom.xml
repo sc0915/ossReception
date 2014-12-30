@@ -309,15 +309,6 @@
         </dependency>
 
 
-
-
-        <dependency>
-            <groupId>commons-httpclient</groupId>
-            <artifactId>commons-httpclient</artifactId>
-            <version>3.0.1</version>
-        </dependency>
-
-
     </dependencies>
 
 
