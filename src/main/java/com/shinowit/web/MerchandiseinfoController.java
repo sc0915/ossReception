@@ -27,8 +27,7 @@ public class MerchandiseinfoController {
     @Resource
     private MerchandiseinfoDAO merchandiseinfoDAO;
 
-    @Resource
-    private TmeMerchandiseinfoMapper merchandiseinfoMapper;
+
 
     @RequestMapping("/dispalymerchandiseinfo")
     @ResponseBody
