@@ -19,62 +19,62 @@
     <script type="text/javascript" src="<%=request.getContextPath()%>/page/jquery.paginate.js"></script>
 
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.mername').click(function () {
-                $.ajax({
-                    type: "get",
-                    url: "<%=request.getContextPath()%>/merchandiseinfo/dispalymerchandiseinfo",
-                    data: "merchandisecid=" + $(this).attr('data'),
-                    contentType: "application/json",
-                    success: function (data) {
-                        var refreshHtml = '';
-                        for (var i = 0; i < data.length; i++) {
-                            refreshHtml += '<dl>' +
-                                    '<dt><a href="<%=request.getContextPath()%>/inner/dispalyinner/'+data[i].MerchandiseID+'" target="_new">' +
-                                    '<img src="<%=request.getContextPath()%>/images/T1.jpg" width="310" height="310" border="0"/></a>' +
-                                    '</dt>' +
-                                    '<dd>' + data[i].MerchandiseName + '</dd>' +
-                                    '<dd><span class="viv1">￥:' + data[i].Price + '</span><span class="viv2">' +
-                                    '<a href="<%=request.getContextPath()%>/inner/dispalyinner/'+data[i].MerchandiseID+'" target="_new">' +
-                                    '<img src="<%=request.getContextPath()%>/images/vivioow_b2.jpg" width="80" height="24" border="0"/></a></span></dd>' +
-                                    '</dl>';
-                        }
-                        document.getElementById('hostid').innerHTML = refreshHtml;
-                    }
-                });
-            });
-        });
+    <%--<script type="text/javascript">--%>
+        <%--$(document).ready(function () {--%>
+            <%--$('.mername').click(function () {--%>
+                <%--$.ajax({--%>
+                    <%--type: "get",--%>
+                    <%--url: "<%=request.getContextPath()%>/merchandiseinfo/dispalymerchandiseinfo",--%>
+                    <%--data: "merchandisecid=" + $(this).attr('data'),--%>
+                    <%--contentType: "application/json",--%>
+                    <%--success: function (data) {--%>
+                        <%--var refreshHtml = '';--%>
+                        <%--for (var i = 0; i < data.length; i++) {--%>
+                            <%--refreshHtml += '<dl>' +--%>
+                                    <%--'<dt><a href="<%=request.getContextPath()%>/inner/dispalyinner/'+data[i].MerchandiseID+'" target="_new">' +--%>
+                                    <%--'<img src="<%=request.getContextPath()%>/images/T1.jpg" width="310" height="310" border="0"/></a>' +--%>
+                                    <%--'</dt>' +--%>
+                                    <%--'<dd>' + data[i].MerchandiseName + '</dd>' +--%>
+                                    <%--'<dd><span class="viv1">￥:' + data[i].Price + '</span><span class="viv2">' +--%>
+                                    <%--'<a href="<%=request.getContextPath()%>/inner/dispalyinner/'+data[i].MerchandiseID+'" target="_new">' +--%>
+                                    <%--'<img src="<%=request.getContextPath()%>/images/vivioow_b2.jpg" width="80" height="24" border="0"/></a></span></dd>' +--%>
+                                    <%--'</dl>';--%>
+                        <%--}--%>
+                        <%--document.getElementById('hostid').innerHTML = refreshHtml;--%>
+                    <%--}--%>
+                <%--});--%>
+            <%--});--%>
+        <%--});--%>
 
-    </script>
+    <%--</script>--%>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.proname').click(function () {
-                $.ajax({
-                    type: "get",
-                    url: "<%=request.getContextPath()%>/merchandiseinfo/prostauts",
-                    data: "prostatusid=" + $(this).attr('prodata'),
-                    contentType: "application/json",
-                    success: function (data) {
-                        var refreshHtml = '';
-                        for (var i = 0; i < data.length; i++) {
-                            refreshHtml += '<dl>' +
-                                    '<dt><a href="<%=request.getContextPath()%>/inner/dispalyinner/'+data[i].MerchandiseID+'" target="_new">' +
-                                    '<img src="<%=request.getContextPath()%>/images/T1.jpg" width="310" height="310" border="0"/></a>' +
-                                    '</dt>' +
-                                    '<dd>' + data[i].MerchandiseName + '</dd>' +
-                                    '<dd><span class="viv1">￥:' + data[i].Price + '</span><span class="viv2">' +
-                                    '<a href="<%=request.getContextPath()%>/inner/dispalyinner/'+data[i].MerchandiseID+'" target="_new"">' +
-                                    '<img src="<%=request.getContextPath()%>/images/vivioow_b2.jpg" width="80" height="24" border="0"/></a></span></dd>' +
-                                    '</dl>';
-                        }
-                        document.getElementById('hostid').innerHTML = refreshHtml;
-                    }
-                });
-            });
-        });
-    </script>
+    <%--<script type="text/javascript">--%>
+        <%--$(document).ready(function () {--%>
+            <%--$('.proname').click(function () {--%>
+                <%--$.ajax({--%>
+                    <%--type: "get",--%>
+                    <%--url: "<%=request.getContextPath()%>/merchandiseinfo/prostauts",--%>
+                    <%--data: "prostatusid=" + $(this).attr('prodata'),--%>
+                    <%--contentType: "application/json",--%>
+                    <%--success: function (data) {--%>
+                        <%--var refreshHtml = '';--%>
+                        <%--for (var i = 0; i < data.length; i++) {--%>
+                            <%--refreshHtml += '<dl>' +--%>
+                                    <%--'<dt><a href="<%=request.getContextPath()%>/inner/dispalyinner/'+data[i].MerchandiseID+'" target="_new">' +--%>
+                                    <%--'<img src="<%=request.getContextPath()%>/images/T1.jpg" width="310" height="310" border="0"/></a>' +--%>
+                                    <%--'</dt>' +--%>
+                                    <%--'<dd>' + data[i].MerchandiseName + '</dd>' +--%>
+                                    <%--'<dd><span class="viv1">￥:' + data[i].Price + '</span><span class="viv2">' +--%>
+                                    <%--'<a href="<%=request.getContextPath()%>/inner/dispalyinner/'+data[i].MerchandiseID+'" target="_new"">' +--%>
+                                    <%--'<img src="<%=request.getContextPath()%>/images/vivioow_b2.jpg" width="80" height="24" border="0"/></a></span></dd>' +--%>
+                                    <%--'</dl>';--%>
+                        <%--}--%>
+                        <%--document.getElementById('hostid').innerHTML = refreshHtml;--%>
+                    <%--}--%>
+                <%--});--%>
+            <%--});--%>
+        <%--});--%>
+    <%--</script>--%>
 
 
     <script type="text/javascript">
@@ -95,21 +95,32 @@
                 images					: false,
                 mouse					: 'slide',
                 onChange:function(page){
-                    location.href="<%=request.getContextPath()%>/merchand/dispalymerchand?pageid="+page;
+                    var prostatusid=$("#prostatus_id").val();
+                    var merchandisecid=$("#merchandisec_id").val();
+                    if((prostatusid=="")&&(merchandisecid=="")){
+                        location.href="<%=request.getContextPath()%>/merchand/dispalymerchand?pageid="+page;
+                    }
+                    if((prostatusid!="")&&(merchandisecid=="")){
+                        location.href="<%=request.getContextPath()%>/merchand/dispalymerchand?pageid="+page+"&prostatusid="+prostatusid;
+                    }
+                    if((merchandisecid!="")&&(prostatusid=="")){
+                        location.href="<%=request.getContextPath()%>/merchand/dispalymerchand?pageid="+page+"&merchandisecid="+merchandisecid;
+                    }
                 }
             });
         });
 
     </script>
 
-
-
-
 </head>
 
 <body>
 <input type="hidden" class="countpage" value="${countnum}"/>
 <input type="hidden" class="page_id" name="pageid" value="${pageid}" />
+<input type="hidden" id="merchandisec_id" name="merchandisecid" value="${mercha.merchandisecid}" />
+<input type="hidden" id="prostatus_id" name="prostatusid" value="${mercha.prostatusid}" />
+
+
 <div id="box">
     <!--top start -->
     <div id="top">
@@ -206,13 +217,13 @@
                 <h2>商品分类</h2>
                 <ul>
                     <c:forEach items="${merlist}" var="mer">
-                        <li><a class="mername" data="${mer.merchandisecid}">${mer.merchandisecname}</a></li>
+                        <li><a class="mername" href="<%=request.getContextPath()%>/merchand/dispalymerchand?merchandisecid=${mer.merchandisecid}">${mer.merchandisecname}</a></li>
                     </c:forEach>
                 </ul>
                 <h2 class="detail">商品状态</h2>
                 <ul class="leftLink">
                     <c:forEach items="${prolist}" var="pro">
-                        <li><a class="proname" prodata="${pro.prostatusid}">${pro.prostatusname}</a></li>
+                        <li><a class="proname" href="<%=request.getContextPath()%>/merchand/dispalymerchand?prostatusid=${pro.prostatusid}">${pro.prostatusname}</a></li>
                     </c:forEach>
                 </ul>
                 <br class="spacer"/>
